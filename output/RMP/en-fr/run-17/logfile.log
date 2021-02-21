@@ -1,0 +1,62 @@
+2021-02-21 23:41:28,267: INFO: data_params
+	data_dir: ./muse_data/
+	languages: [{'filename': 'wiki.en.vec', 'name': 'en'}, {'filename': 'wiki.fr.vec', 'name': 'fr'}]
+	mean_center: True
+	mode: rand
+	max_freq: 20000
+	output_dir: ./output/RMP/en-fr
+	supervised: {'fname': 'en-fr.0-5000.txt', 'random': True, 'max_count': 1000}
+	unit_norm: True
+	unsupervised: True
+	save_dir: ./output/RMP/en-fr/run-17
+2021-02-21 23:41:28,267: INFO: model_params
+	init_epsilon: 0.05
+	init_iter: 100
+	init_vocab: 2500
+	binary_P: True
+	lr: 500
+	epoches: 2
+	lambda_KL: 0.001
+	epsilon: 0.05
+	bsz: 500
+	steps: 200
+	refine_epochs: 5
+	refine_dict_size: 10000
+	refine_tgt_rank: 15000
+	refine_thresh: 0.0
+	num_tgts: 10
+	sup_steps: 2000
+	sup_bsz: 400
+	logafter: 10
+	opt_params: {'name': 'SGD', 'lr': 1.0}
+2021-02-21 23:41:32,455: INFO: EN-Embedding Unit Norming
+2021-02-21 23:41:32,464: INFO: EN-Embedding Mean Centering
+2021-02-21 23:41:32,465: INFO: EN-Embedding Unit Norming
+2021-02-21 23:41:33,025: INFO: FR-Embedding Unit Norming
+2021-02-21 23:41:33,030: INFO: FR-Embedding Mean Centering
+2021-02-21 23:41:33,030: INFO: FR-Embedding Unit Norming
+2021-02-21 23:41:34,693: INFO: [W Proc. optimization]
+2021-02-21 23:43:07,045: INFO: start of Epoch 1/2
+2021-02-21 23:44:19,626: INFO: Using Mode: csls
+2021-02-21 23:44:19,825: INFO: Total: 1500, Precision@1: 37.33, @5: 56.87, @10: 63.27
+2021-02-21 23:44:19,826: INFO: Using Mode: csls
+2021-02-21 23:44:20,191: INFO: Removed 100 hub elements For unsupervised
+2021-02-21 23:44:20,192: INFO: Unsupervised: 0.0437
+2021-02-21 23:44:20,192: INFO: Metric unsupervised improved from -1.00 to 0.04
+2021-02-21 23:44:20,758: INFO: Finished epoch (1 / 2). Took 73.20s. Obj 12.217.
+2021-02-21 23:44:20,759: INFO: start of Epoch 2/2
+2021-02-21 23:44:34,814: INFO: Using Mode: csls
+2021-02-21 23:44:35,086: INFO: Total: 1500, Precision@1: 64.00, @5: 77.07, @10: 79.67
+2021-02-21 23:44:35,086: INFO: Using Mode: csls
+2021-02-21 23:44:35,634: INFO: Removed 0 hub elements For unsupervised
+2021-02-21 23:44:35,635: INFO: Unsupervised: 0.1235
+2021-02-21 23:44:35,635: INFO: Metric unsupervised improved from 0.04 to 0.12
+2021-02-21 23:44:39,293: INFO: Finished epoch (2 / 2). Took 14.93s. Obj 11.894.
+2021-02-21 23:44:39,294: INFO: start of refine Epoch 1/5
+2021-02-21 23:46:06,822: INFO: Using Mode: csls
+2021-02-21 23:46:07,048: INFO: Total: 1500, Precision@1: 28.73, @5: 47.53, @10: 54.60
+2021-02-21 23:46:07,049: INFO: Using Mode: csls
+2021-02-21 23:46:07,467: INFO: Removed 1272 hub elements For unsupervised
+2021-02-21 23:46:07,468: INFO: Unsupervised: -0.0506
+2021-02-21 23:46:07,751: INFO: Finished refine epoch (1 / 5). Took 88.22s. Obj nan.
+2021-02-21 23:46:07,751: INFO: start of refine Epoch 2/5

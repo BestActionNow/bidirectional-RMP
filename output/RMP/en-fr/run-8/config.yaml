@@ -1,0 +1,41 @@
+data_params:
+  data_dir: ./muse_data/
+  languages:
+  - filename: wiki.en.vec
+    name: en
+  - filename: wiki.fr.vec
+    name: fr
+  max_freq: 20000
+  mean_center: true
+  mode: rand
+  output_dir: ./output/RMP/en-fr
+  save_dir: ./output/RMP/en-fr/run-8
+  supervised:
+    fname: en-fr.0-5000.txt
+    max_count: 1000
+    random: true
+  unit_norm: true
+  unsupervised: true
+method: RMP
+model_params:
+  binary_P: true
+  bsz: 500
+  epoches: 0
+  epsilon: 0.05
+  init_epsilon: 0.05
+  init_iter: 100
+  init_vocab: 2500
+  lambda_KL: 0.001
+  lr: 500
+  num_tgts: 10
+  opt_params:
+    lr: 1.0
+    name: SGD
+  refine_dict_size: 10000
+  refine_epochs: 5
+  refine_tgt_rank: 15000
+  refine_thresh: 0.0
+  steps: 2000
+  sup_steps: 2000
+src: en
+tgt: fr

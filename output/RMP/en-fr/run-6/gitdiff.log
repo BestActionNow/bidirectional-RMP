@@ -1,0 +1,7 @@
+diff --git a/README.md b/README.md
+index 0f040c7..36c56d7 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1 @@
+-# A Relaxed Matching Procedure for Unsupervised BLI
++# SemeS-BLI-with-Prior-OT

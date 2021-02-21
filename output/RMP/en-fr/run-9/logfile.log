@@ -1,0 +1,36 @@
+2021-02-21 23:06:13,380: INFO: data_params
+	data_dir: ./muse_data/
+	languages: [{'filename': 'wiki.en.vec', 'name': 'en'}, {'filename': 'wiki.fr.vec', 'name': 'fr'}]
+	mean_center: True
+	mode: rand
+	max_freq: 20000
+	output_dir: ./output/RMP/en-fr
+	supervised: {'fname': 'en-fr.0-5000.txt', 'random': True, 'max_count': 1000}
+	unit_norm: True
+	unsupervised: True
+	save_dir: ./output/RMP/en-fr/run-9
+2021-02-21 23:06:13,380: INFO: model_params
+	init_epsilon: 0.05
+	init_iter: 100
+	init_vocab: 2500
+	binary_P: True
+	lr: 500
+	epoches: 0
+	lambda_KL: 0.001
+	epsilon: 0.05
+	bsz: 500
+	steps: 2000
+	refine_epochs: 5
+	refine_dict_size: 10000
+	refine_tgt_rank: 15000
+	refine_thresh: 0.0
+	num_tgts: 10
+	opt_params: {'name': 'SGD', 'lr': 1.0}
+	sup_steps: 2000
+2021-02-21 23:06:17,793: INFO: EN-Embedding Unit Norming
+2021-02-21 23:06:17,804: INFO: EN-Embedding Mean Centering
+2021-02-21 23:06:17,805: INFO: EN-Embedding Unit Norming
+2021-02-21 23:06:18,442: INFO: FR-Embedding Unit Norming
+2021-02-21 23:06:18,455: INFO: FR-Embedding Mean Centering
+2021-02-21 23:06:18,455: INFO: FR-Embedding Unit Norming
+2021-02-21 23:06:20,298: INFO: [W Proc. optimization]

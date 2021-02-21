@@ -1,0 +1,47 @@
+2021-02-21 23:16:26,972: INFO: data_params
+	data_dir: ./muse_data/
+	languages: [{'filename': 'wiki.en.vec', 'name': 'en'}, {'filename': 'wiki.fr.vec', 'name': 'fr'}]
+	mean_center: True
+	mode: rand
+	max_freq: 20000
+	output_dir: ./output/RMP/en-fr
+	supervised: {'fname': 'en-fr.0-5000.txt', 'random': True, 'max_count': 1000}
+	unit_norm: True
+	unsupervised: True
+	save_dir: ./output/RMP/en-fr/run-13
+2021-02-21 23:16:26,973: INFO: model_params
+	init_epsilon: 0.05
+	init_iter: 100
+	init_vocab: 2500
+	binary_P: True
+	lr: 500
+	epoches: 0
+	lambda_KL: 0.001
+	epsilon: 0.05
+	bsz: 500
+	steps: 2000
+	refine_epochs: 5
+	refine_dict_size: 10000
+	refine_tgt_rank: 15000
+	refine_thresh: 0.0
+	num_tgts: 10
+	sup_steps: 2000
+	sup_bsz: 400
+	logafter: 10
+	opt_params: {'name': 'SGD', 'lr': 1.0}
+2021-02-21 23:16:31,485: INFO: EN-Embedding Unit Norming
+2021-02-21 23:16:31,498: INFO: EN-Embedding Mean Centering
+2021-02-21 23:16:31,499: INFO: EN-Embedding Unit Norming
+2021-02-21 23:16:32,059: INFO: FR-Embedding Unit Norming
+2021-02-21 23:16:32,066: INFO: FR-Embedding Mean Centering
+2021-02-21 23:16:32,066: INFO: FR-Embedding Unit Norming
+2021-02-21 23:16:33,881: INFO: [W Proc. optimization]
+2021-02-21 23:17:56,791: INFO: start of refine Epoch 1/5
+2021-02-21 23:19:13,279: INFO: Using Mode: csls
+2021-02-21 23:19:13,586: INFO: Total: 1500, Precision@1:  0.93, @5:  2.47, @10:  3.33
+2021-02-21 23:19:13,586: INFO: Using Mode: csls
+2021-02-21 23:19:14,372: INFO: Removed 4294 hub elements For unsupervised
+2021-02-21 23:19:14,372: INFO: Unsupervised: -0.0633
+2021-02-21 23:19:14,373: INFO: Metric unsupervised improved from -1.00 to -0.06
+2021-02-21 23:19:14,655: INFO: Finished refine epoch (1 / 5). Took 77.64s. Obj nan.
+2021-02-21 23:19:14,655: INFO: start of refine Epoch 2/5

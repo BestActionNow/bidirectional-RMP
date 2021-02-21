@@ -1,0 +1,1 @@
+from .sinkhorn_loss import sinkhorn, Prior_sinkhorn, VGW
